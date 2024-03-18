@@ -6,7 +6,6 @@
   color: #CB78B1;
  
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body, html {
 	width: 100%;
@@ -17,7 +16,7 @@ body, html {
 	background: black;
 	background-size:  cover;
 	
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'MS-Gothic-01';
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -65,9 +64,45 @@ body, html {
 
 canvas {
 	position: absolute;
-	position: absolute ;
 	bottom: 0;
 }
+ #transition {
+ 	width: 896px;
+ 	height: 544px;
+ 	position: absolute;
+ 	bottom: 0;
+ 	z-index: 9;
+ }
+
+ @keyframes tran {
+ 	0% {
+ 		background: rgba(0, 0, 0, 0);
+ 	}
+ 	5% {
+ 		background: rgba(0, 0, 0, 1);
+ 	}
+ 	10% {
+ 		background: rgba(0, 0, 0, 0);
+ 	}
+ 	15% {
+ 		background: rgba(0, 0, 0, 1);
+ 	}
+ 	20% {
+ 		background: rgba(0, 0, 0, 0);
+ 	}
+ 	30% {
+ 		background: rgba(0, 0, 0, 1);
+ 	}
+ 	50% {
+ 		background: rgba(0, 0, 0, 0);
+ 	}
+ 	65% {
+ 		background: rgba(0, 0, 0, 1);
+ 	}
+ 	100% {
+ 		background: rgba(0, 0, 0, 1);
+ 	}
+ }
 
 ::-webkit-scrollbar {
   width: 10px;
