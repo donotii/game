@@ -4,18 +4,23 @@ const c = canvas.getContext('2d')
 canvas.width = 896
 canvas.height = 544
 
-scrollx = 0
-scrolly = 0
-name = "laura"
+world = 2
+
+scrollx = -26 * 32 + canvas.width/2
+scrolly = -95 * 32 + canvas.height/2
+name = "lola"
 stepss = 0
-vitesse = 1.5
-vitesse_0 = 1.5
+ste = 0
+vitesse_0 = 2.5 
+vitesse = vitesse_0
 velocity = {
     x:0,
     y:0
 }
-
 idle = 2
+cine = false
+changeable = false
+pipi = 0
 
 const keys = {
     right: {
@@ -54,3 +59,17 @@ playerimg.src = "content/img/walk2.png";
 
 const mapimg = new Image()
 mapimg.src = "content/img/map1.png";
+
+const mapimg1= new Image()
+mapimg1.src = "content/img/premier.png";
+
+const epou= new Image()
+epou.src = "content/img/epou.png";
+
+
+
+/*fps*/
+let msPrev = window.performance.now()
+const fps = 60
+const msPerFrame = 1000 / fps
+let frames = 0

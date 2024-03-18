@@ -13,7 +13,7 @@ window.addEventListener('keydown', (event) => {
             keys.down.pressed = true
             break
         case 'e':
-            keys.kee.pressed = true
+            transitil()
         break
     }
 })
